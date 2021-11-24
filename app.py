@@ -8,7 +8,7 @@ from flask import Flask, request, abort
 app = Flask(__name__)
 
 # 這裡定義服務存放的位置，也就是使用者連線的網址
-
+@app.route("/", methods=['GET'])
 
 
 @app.route("/map/w01-6", methods=['GET'])
